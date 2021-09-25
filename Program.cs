@@ -6,31 +6,30 @@ namespace MediaAritimetica
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            double n1, n2, n3, m;
+            
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("==== Calcular Média Aritimética ==== ");
+            Console.WriteLine("\n==== Calcular Média Aritimética ====\n");
             Console.ResetColor();
-            Console.WriteLine();
-            Console.WriteLine("Me diga o valor de 3 números para que");
-            Console.WriteLine("seja possível calcular a média.");
-            Console.WriteLine();
+
+            Console.WriteLine("Me diga o valor de 3 números para\nque seja possível calcular a média.\n");
+
             Console.Write("Número 1..: ");
-            string numero1 = Console.ReadLine();
-            double n1 = Convert.ToDouble(numero1);
+            n1 = Convert.ToDouble(Console.ReadLine());
+            
             Console.Write("Número 2..: ");
-            string numero2 = Console.ReadLine();
-            double n2 = Convert.ToDouble(numero2);
+            n2 = Convert.ToDouble(Console.ReadLine());
+
             Console.Write("Número 3..: ");
-            string numero3 = Console.ReadLine();
-            double n3 = Convert.ToDouble(numero3);
-            double m = (n1 + n2 + n3) / 3;
-            Console.WriteLine();
+            n3 = Convert.ToDouble(Console.ReadLine());
+            
+            m = (n1 + n2 + n3) / 3;
+            
             Console.ForegroundColor = ConsoleColor.DarkYellow;
-            Console.WriteLine("=== Resultado ===");
+            Console.WriteLine("\n=== Resultado ===\n");
             Console.ResetColor();
-            Console.WriteLine();
-            Console.WriteLine($"A média entre os três números é {m:N1}");
-            Console.WriteLine();
+
+            Console.WriteLine($"A média entre os três números é {m:N1}\n");
         }
     }
 }
